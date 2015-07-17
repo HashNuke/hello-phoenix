@@ -6,7 +6,7 @@ defmodule HelloPhoenix.PageController do
   end
 
   def foo(conn, _params) do
-    text conn, "hello bar ~!"
+    text conn, "hello foobar ~!"
   end
 
 end
