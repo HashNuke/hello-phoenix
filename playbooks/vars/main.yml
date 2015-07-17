@@ -1,0 +1,4 @@
+---
+app_name: hello_phoenix
+repo_url: "git@github.com:HashNuke/hello-phoenix.git"
+app_port: 3001
