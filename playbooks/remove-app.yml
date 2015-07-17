@@ -5,4 +5,4 @@
     - vars/main.yml
 
   roles:
-    - {role: "elixir-stack", action: "setup"}
+    - {role: "elixir-stack", action: "remove-app"}
