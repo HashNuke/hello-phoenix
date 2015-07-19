@@ -41,7 +41,7 @@ defmodule HelloPhoenix.Mixfile do
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 1.1"},
      {:exrm, "~> 0.18.1"},
-     {:phoenix_live_reload, "~> 0.4", only: :dev},
+     {:phoenix_live_reload, "~> 0.4"},
      {:cowboy, "~> 1.0"}]
   end
 end
