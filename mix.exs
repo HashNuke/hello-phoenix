@@ -36,12 +36,12 @@ defmodule HelloPhoenix.Mixfile do
   #
   # Type `mix help deps` for examples and options
   defp deps do
-    [{:phoenix, "~> 0.14"},
-     {:phoenix_ecto, "~> 0.5"},
+    [{:phoenix, "~> 0.17"},
+     {:phoenix_ecto, "~> 1.1.0"},
      {:postgrex, ">= 0.0.0"},
-     {:phoenix_html, "~> 1.1"},
+     {:phoenix_html, "~> 2.1.2"},
      {:exrm, "~> 0.19.2"},
-     {:phoenix_live_reload, "~> 0.4"},
+     {:phoenix_live_reload, "~> 1.0"},
      {:cowboy, "~> 1.0"}]
   end
 end

@@ -32,4 +32,4 @@ config :hello_phoenix, HelloPhoenix.Repo,
   username: "postgres",
   password: "postgres",
   database: "hello_phoenix_dev",
-  size: 10 # The amount of database connections in the pool
+  pool_size: 10 # The amount of database connections in the pool

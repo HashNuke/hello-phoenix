@@ -16,4 +16,4 @@ config :hello_phoenix, HelloPhoenix.Repo,
   password: "postgres",
   database: "hello_phoenix_test",
   pool: Ecto.Adapters.SQL.Sandbox, # Use a sandbox for transactional testing
-  size: 1
+  pool_size: 1

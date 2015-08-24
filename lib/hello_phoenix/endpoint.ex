@@ -32,5 +32,5 @@ defmodule HelloPhoenix.Endpoint do
     key: "_hello_phoenix_key",
     signing_salt: "q+oeNiK0"
 
-  plug :router, HelloPhoenix.Router
+  plug HelloPhoenix.Router
 end
