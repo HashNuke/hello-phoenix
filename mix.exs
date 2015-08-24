@@ -40,7 +40,7 @@ defmodule HelloPhoenix.Mixfile do
      {:phoenix_ecto, "~> 0.5"},
      {:postgrex, ">= 0.0.0"},
      {:phoenix_html, "~> 1.1"},
-     {:exrm, "~> 0.18.1"},
+     {:exrm, "~> 0.19.2"},
      {:phoenix_live_reload, "~> 0.4"},
      {:cowboy, "~> 1.0"}]
   end
