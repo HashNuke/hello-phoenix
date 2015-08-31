@@ -20,7 +20,6 @@ defmodule HelloPhoenix.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      # Alias the data repository and import query/model functions
       alias HelloPhoenix.Repo
       import Ecto.Model
       import Ecto.Query, only: [from: 2]

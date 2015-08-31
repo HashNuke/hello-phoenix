@@ -8,5 +8,4 @@ defmodule HelloPhoenix.PageController do
   def foo(conn, _params) do
     text conn, "hello foobar-5 ~!"
   end
-
 end

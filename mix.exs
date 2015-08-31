@@ -3,7 +3,7 @@ defmodule HelloPhoenix.Mixfile do
 
   def project do
     [app: :hello_phoenix,
-     version: "0.0.5",
+     version: "0.0.1",
      elixir: "~> 1.0",
      elixirc_paths: elixirc_paths(Mix.env),
      compilers: [:phoenix] ++ Mix.compilers,
@@ -17,16 +17,9 @@ defmodule HelloPhoenix.Mixfile do
   # Type `mix help compile.app` for more information
   def application do
     [mod: {HelloPhoenix, []},
-     applications: app_list(Mix.env)]
+     applications: [:phoenix, :phoenix_html, :cowboy, :logger,
+                    :phoenix_ecto, :postgrex]]
   end
-
-  defp app_list do
-    [:phoenix, :phoenix_html, :cowboy, :logger, :phoenix_ecto, :postgrex]
-  end
-
-  defp app_list(:dev),  do: [:phoenix_live_reload | app_list]
-  defp app_list(_),     do: app_list
-
 
   # Specifies which paths to compile per environment
   defp elixirc_paths(:test), do: ["lib", "web", "test/support"]
@@ -36,12 +29,12 @@ defmodule HelloPhoenix.Mixfile do
   #
   # Type `mix help deps` for examples and options
   defp deps do
-    [{:phoenix, "~> 0.14"},
-     {:phoenix_ecto, "~> 0.5"},
+    [{:phoenix, "~> 1.0.0"},
+     {:phoenix_ecto, "~> 1.1"},
      {:postgrex, ">= 0.0.0"},
-     {:phoenix_html, "~> 1.1"},
-     {:exrm, path: "/Users/HashNuke/projects/exrm"},
-     {:phoenix_live_reload, "~> 0.4"},
-     {:cowboy, "~> 1.0"}]
+     {:phoenix_html, "~> 2.1"},
+     {:phoenix_live_reload, "~> 1.0", only: :dev},
+     {:cowboy, "~> 1.0"},
+     {:exrm, "~> 0.19.2"}]
   end
 end
