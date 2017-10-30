@@ -5,12 +5,15 @@
 # is restricted to this project.
 use Mix.Config
 
+# General application configuration
+config :hello_phoenix,
+  ecto_repos: [HelloPhoenix.Repo]
+
 # Configures the endpoint
-config :hello_phoenix, HelloPhoenix.Endpoint,
+config :hello_phoenix, HelloPhoenixWeb.Endpoint,
   url: [host: "localhost"],
-  root: Path.dirname(__DIR__),
-  secret_key_base: "qDwqWYEB9avRueFqpFcod5td/MzXNFA5SIRm8X9gOPuzvyhu/MFJ9zQPXUJ1wTXX",
-  render_errors: [accepts: ~w(html json)],
+  secret_key_base: "cp8JvoJ3TWuz0chYPHNpbpYtORgsQYz9io6GbQJiPiMxdRw1UwsP0CokFapInMU9",
+  render_errors: [view: HelloPhoenixWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: HelloPhoenix.PubSub,
            adapter: Phoenix.PubSub.PG2]
 

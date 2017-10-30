@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-mix release.clean --implode --no-confirm
-mix release
